@@ -3,6 +3,7 @@
 }
 .btn {
   border: 3px solid black;
+  background-color: transparent;
   background-color: white;
   padding: 10px 15px ;
   border-radius: 8px;
@@ -10,9 +11,24 @@
   font-weight: 700;
   font-size: 20px;
 
-  transition: all 300ms;
+  position: relative;
 }
-.btn:hover {
+/*.btn:hover {
 background-color: black;
 color: white;
+}*/
+.btn span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+
+  width: 0%;
+  transition: all 300ms;
+
+  background-color: black;
+}
+.btn:hover span {
+  width: 100%;
 }
