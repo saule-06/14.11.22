@@ -17,7 +17,10 @@
 background-color: black;
 color: white;
 }*/
-.btn span {
+.btn::before {
+  display: block;
+  content: "";
+  position: absolute;
   position: absolute;
   top: 0;
   left: 0;
@@ -31,4 +34,7 @@ color: white;
 }
 .btn:hover span {
   width: 100%;
+}
+.btn:hover{
+  color: aliceblue;
 }
